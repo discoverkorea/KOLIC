@@ -1929,8 +1929,9 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 0;
+				padding-top: 3em;
 			}
+
 
 		}
 
@@ -2272,9 +2273,10 @@ input, select, textarea {
   position: relative;
 }
 video {
-  height: auto;
+height:100%;
+	object-fit: cover;
   vertical-align: middle;
-  width: 100%;
+  width: 100% !important;
 }
 /* .overlay-desc {
   background: rgba(0,0,0,0);
@@ -2293,7 +2295,7 @@ video {
 		position: absolute;
 		height: 400px;
     left: 9vw;
-    top: 13vw;
+    top: 18vw;
     right: auto;
     bottom: auto;
     max-width: 1920px;
@@ -2357,6 +2359,8 @@ video {
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
 			}
+
+
 
 		}
 
