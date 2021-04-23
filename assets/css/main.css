@@ -3,11 +3,8 @@
 @import url("fontawesome-all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -32,11 +29,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 #logo{
+		width:auto;
+		height:auto;
+		max-height:50px;
 		position:absolute;
-		left:0;
-		top:0;
-		margin-left: 40px;
-		margin-top: 5px;
+		left:100px;
+		top:15px;
+		margin-left: auto;
+		margin-top: auto;
 	}
 
 
@@ -514,8 +514,8 @@ input, select, textarea {
 	nav, body, input, textarea, select {
 		font-family: 'Noto Sans KR', sans-serif;
 		font-weight: 300;
-		font-size: 18pt;
-		line-height: 1.75em;
+		font-size: 24pt;
+		line-height: 0.5em;
 		color: #39454b;
 		letter-spacing: 0.025em;
 	}
@@ -558,6 +558,9 @@ input, select, textarea {
 				font-size: 12pt;
 				line-height: 1.5em;
 			}
+			#logo{
+					visibility: hidden;
+				}
 
 		}
 
@@ -1408,13 +1411,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.poptrox-popup .nav-next:before,
-			.poptrox-popup .nav-previous:before {
-				width: 48px;
-				height: 32px;
-				background-size: contain;
-				margin: -16px 0 0 0;
-			}
+
 
 			.poptrox-popup .closer:before {
 				right: 12px;
@@ -1921,13 +1918,18 @@ input, select, textarea {
 		}
 
 	body {
-		padding-top: 3em;
+		padding-top: 0;
 	}
+
+
+
+
+
 
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 2.5em;
+				padding-top: 0;
 			}
 
 		}
@@ -2274,28 +2276,34 @@ video {
   vertical-align: middle;
   width: 100%;
 }
-.overlay-desc {
+/* .overlay-desc {
   background: rgba(0,0,0,0);
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .wrapper{
   display: flex;
 }
 .wrapper .static-txt{
-	font-family:"Noto Sans KR", sans-serif;
-	position: absolute;
-  top: 100px;
-  right: 900px;
-  width: 500px;
-  height: 100px;
-  color: #fff;
-  font-size: 34px;
-  font-weight: 500;
+		font-family:"Noto Sans KR", sans-serif;
+		position: absolute;
+		height: 400px;
+    left: 9vw;
+    top: 13vw;
+    right: auto;
+    bottom: auto;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  	color: #fff;
+  	font-size: 3vw;
+		line-height: normal;
+		font-weight: 500;
 }
 
 
