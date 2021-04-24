@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 		height:auto;
 		max-height:50px;
 		position:absolute;
-		left:100px;
+		left:60px;
 		top:15px;
 		margin-left: auto;
 		margin-top: auto;
@@ -2270,14 +2270,18 @@ input, select, textarea {
 	}
 
 .video-container {
-  position: relative;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+
 }
-video {
-height:100%;
+.video-container video {
 	object-fit: cover;
-  vertical-align: middle;
-  width: 100% !important;
+	width:100%;
+	height:100%;
 }
+
+
 
 
 .wrapper{
@@ -2288,7 +2292,7 @@ height:100%;
 		position: absolute;
 		height: 400px;
     left: 9vw;
-    top: 18vw;
+    top: 12vw;
     right: auto;
     bottom: auto;
     max-width: 1920px;
@@ -2296,7 +2300,7 @@ height:100%;
     margin-right: auto;
     box-sizing: border-box;
   	color: #fff;
-  	font-size: 3vw;
+  	font-size: 42px;
 		line-height: normal;
 		font-weight: 500;
 }
@@ -2352,6 +2356,23 @@ height:100%;
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
 			}
+			.wrapper .static-txt{
+					font-family:"Noto Sans KR", sans-serif;
+					position: absolute;
+					height: 400px;
+			    left: 9vw;
+			    top: 25vw;
+			    right: auto;
+			    bottom: auto;
+			    max-width: 1920px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    box-sizing: border-box;
+			  	color: #fff;
+			  	font-size: 22px;
+					line-height: normal;
+					font-weight: 400;
+			}
 
 
 
@@ -2361,6 +2382,24 @@ height:100%;
 
 			#contact .box {
 				padding: 1em 1em 2em 1em;
+			}
+
+			.wrapper .static-txt{
+					font-family:"Noto Sans KR", sans-serif;
+					position: absolute;
+					height: 400px;
+			    left: 9vw;
+			    top: 28vw;
+			    right: auto;
+			    bottom: auto;
+			    max-width: 1920px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    box-sizing: border-box;
+			  	color: #fff;
+			  	font-size: 18px;
+					line-height: normal;
+					font-weight: 400;
 			}
 
 		}

@@ -7,6 +7,7 @@
 nav {
       padding-top: 0px;
       padding-bottom: 0px;
+      padding-right: 24px;
 
 }
 
@@ -15,28 +16,31 @@ nav {
   position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
     width: 100%;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid lightgray;
     background-color: #fff;
 
 }
 
 .logo {
+
       float: left;
       padding: 8px;
-      margin-left: 16px;
+      margin-left: 0;
       margin-top: 8px;
       visibility: hidden;
 }
 
 .logo a {
+
       color: #000;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 18px;
       letter-spacing: 0px;
       text-decoration: none;
+      text-align: center;
+      vertical-align: middle;
 }
 
 
@@ -65,21 +69,24 @@ nav ul li a {
       color: #000;
       text-transform: uppercase;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 18px;
       letter-spacing: 1.2px;
       font-weight: 600;
 }
 
 @media screen and (max-width: 864px) {
       .logo {
-        float: right;
+        width: 100%;
         visibility: visible;
-        margin-right: 50px;
-        margin-bottom: 12px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        margin-left: 10px;
       }
+
       #logo {
         visibility: hidden;
       }
+
 
       .nav-wrapper {
             position: fixed;
@@ -143,7 +150,7 @@ nav ul li a {
             color: white;
             position: fixed;
             right: 10px;
-            top: 8px;
+            top: 10px;
             display: block;
             width: 48px;
             height: 48px;
