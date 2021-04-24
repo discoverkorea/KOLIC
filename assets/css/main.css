@@ -2369,9 +2369,9 @@ input, select, textarea {
 			    margin-right: auto;
 			    box-sizing: border-box;
 			  	color: #fff;
-			  	font-size: 22px;
+			  	font-size: 26px;
 					line-height: normal;
-					font-weight: 400;
+					font-weight: 500;
 			}
 
 
@@ -2397,9 +2397,9 @@ input, select, textarea {
 			    margin-right: auto;
 			    box-sizing: border-box;
 			  	color: #fff;
-			  	font-size: 18px;
+			  	font-size: 24px;
 					line-height: normal;
-					font-weight: 400;
+					font-weight: 500;
 			}
 
 		}
