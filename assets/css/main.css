@@ -7,7 +7,7 @@
 
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2,  p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -15,17 +15,18 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color: black;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+header, hgroup, menu, nav, section {
 	display: block;}
 
 
@@ -157,6 +158,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
+		color: black;
 		font-weight: 900;
 		color: inherit;
 		letter-spacing: -0.0325em;
@@ -797,9 +799,7 @@ input, select, textarea {
 			padding: 0 0 0.5em 0;
 		}
 
-	footer {
-		margin-top: 2em;
-	}
+
 
 /* Table */
 
@@ -1645,7 +1645,8 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 4em 0 4em 0;
+
 		}
 
 			.main.style3 .content > header {
@@ -1658,6 +1659,7 @@ input, select, textarea {
 
 			.main.style3.secondary {
 				background: #f5f6f7;
+				padding-bottom: 4em;
 			}
 
 		.main.dark {
@@ -1768,89 +1770,104 @@ input, select, textarea {
 		}
 
 /* Footer */
+.fa:hover {
+    opacity: 0.7;
+}
 
-	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		position: relative;
-		margin: 0;
-		line-height: 1em;
-		padding: 1.5em;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
-		overflow: hidden;
-	}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 
-		#footer > * {
-			margin-bottom: 0;
-		}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
-		#footer a {
-			color: inherit;
-		}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
 
-			#footer a:hover {
-				color: #b9babb;
-			}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
-		#footer ul.menu {
-			margin: 0;
-		}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 
-		@media screen and (max-width: 1000px) {
 
-			#footer {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				line-height: 1.5em;
-				text-align: center;
-				padding: 2em 1em 2em 1em;
-			}
+.contact-area {
+border-bottom: 1px solid #000000;
+padding-top: 20px;
+}
 
-				#footer > * {
-					margin: 0 0 1em 0;
-				}
 
-		}
 
-		@media screen and (max-width: 736px) {
+.contact-content h6 {
+color: white;
+font-family: "Noto sans kr", sans-serif;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 10px;
+}
 
-			#footer ul.menu li {
-				border-left: none;
-				display: block;
-				line-height: inherit;
-				margin: 0.25em 0 0 0;
-				padding: 0.25em 0 0 0;
-			}
+.contact-content span {
+color: white;
+margin: 0 10px;
+}
 
-				#footer ul.menu li:first-child {
-					margin-top: 0;
-					padding-top: 0;
-				}
+.contact-social {
+margin-top: 10px;
+text-align: center;
+}
 
-		}
+.contact-social > ul {
+display: inline-flex;
+}
 
+.contact-social ul li a {
+border: 0.5px solid #8b9199;
+color: white;
+display: inline-block;
+height: 45px;
+margin: 0 10px;
+padding-top: 10px;
+transition: all 0.4s ease 0s;
+width: 45px;
+}
+
+.contact-content img {
+max-width: 210px;
+}
+
+section, footer {
+background: #2F3F82;
+color: white;
+}
+
+footer p {
+padding: 40px 0;
+text-align: center;
+}
+
+footer img {
+width: 44px;
+}
+#copyright {
+	font-family: Arial;
+	font-size: 12px;
+	color: white;
+}
 /* Intro */
 
 	#intro {
@@ -1878,6 +1895,9 @@ input, select, textarea {
 
 .wrapper{
   display: flex;
+}
+.wrapper .wrap{
+color:white;
 }
 .wrapper .static-txt{
 		font-family:"Noto Sans KR", sans-serif;
@@ -1917,31 +1937,6 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
-/* Contact */
-
-	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
-	}
-
-		#contact .box {
-			-moz-transition: -moz-transform 1s ease;
-			-webkit-transition: -webkit-transform 1s ease;
-			-ms-transition: -ms-transform 1s ease;
-			transition: transform 1s ease;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			position: relative;
-		}
-
-		#contact.inactive .box {
-			-moz-transform: translateY(100%);
-			-webkit-transform: translateY(100%);
-			-ms-transform: translateY(100%);
-			transform: translateY(100%);
-		}
 
 		@media screen and (max-width: 736px) {
 
@@ -1995,3 +1990,76 @@ input, select, textarea {
 			}
 
 		}
+
+
+		 .text {
+
+			 margin-bottom: 20px;
+			 text-transform: uppercase;
+			 background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+			 -webkit-background-clip: text;
+			 -webkit-text-fill-color: transparent;
+			 font-size: 52px;
+			 font-family: "Noto Sans KR", sans-serif;
+		}
+
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+
+
+
+.imgcontainer {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+
+}
+
+
+
+.sponsor-image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.2rem 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+@supports (display: grid) {
+	.sponsor-image-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.sponsor-image-gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
