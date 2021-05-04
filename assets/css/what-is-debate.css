@@ -265,3 +265,99 @@ width: 200px;
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
+
+.portfolio {
+	padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.portfolio h2 {
+	font-family: "noto sans kr", sans-serif;
+  flex-basis: 100%;
+  text-align: center;
+  margin: 50px auto 30px;
+  text-transform: uppercase;
+  font-size: 6vh;
+  letter-spacing: 2px;
+  color: #111;
+}
+.imgcard {
+	object-fit: fill;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.imgcard .content {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  transition: all 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100px;
+  background: #111;
+}
+.imgcard .image {
+  z-index: 1;
+  height: 100%;
+}
+.imgcard img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+	object-fit: cover;
+}
+
+.imgcard:hover .content {
+  bottom: 0px;
+  color: #fff;
+}
+
+.imgcard:hover .image img {
+  transform: scale(1);
+}
+
+.imgcard .content span:first-child {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.imgcard .content span:last-child {
+  font-size: 14px;
+  color: #18cfab;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+  .imgcard {
+  width: 50%;
+  }
+	.imgcard .content {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imgcard {
+  width: 100%;
+  }
+	.imgcard .content {
+    bottom: 0;
+  }
+}
