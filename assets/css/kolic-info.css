@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+ @keyframes showTopText {
+	 0% {
+		 transform: translate3d(0, 100%, 0);
+	}
+	 40%, 60% {
+		 transform: translate3d(0, 50%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ @keyframes showBottomText {
+	 0% {
+		 transform: translate3d(0, -100%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ .animated-title {
+   font-weight:500;
+	 color: white;
+	 font-family: "Noto Sans Kr",  sans-serif;
+   line-height: normal;
+	 height: 90vmin;
+	 left: 50%;
+	 position: absolute;
+	 top: 50%;
+	 transform: translate(-50%, -50%);
+	 width: 800px;
+}
+ .animated-title > div {
+	 height: 50%;
+	 overflow: hidden;
+	 position: absolute;
+	 width: 100%;
+}
+ .animated-title > div div {
+	 font-size: 42px;
+   color: white;
+	 padding: 2vmin 0;
+	 position: absolute;
+}
+ .animated-title > div div span {
+   color: white;
+	 display: block;
+}
+ .animated-title > div.text-top {
+	 border-bottom: 1px solid lightgray;
+	 top: 0;
+}
+ .animated-title > div.text-top div {
+	 animation: showTopText 1s;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards;
+	 bottom: 0;
+	 transform: translate(0, 100%);
+}
+ .animated-title > div.text-top div span:first-child {
+	 color: white;
+}
+ .animated-title > div.text-bottom {
+	 bottom: 0;
+}
+ .animated-title > div.text-bottom div {
+	 animation: showBottomText 0.5s;
+	 animation-delay: 1.75s;
+	 animation-fill-mode: forwards;
+	 top: 0;
+	 transform: translate(0, -100%);
+}
+
+
+
+.kolic-info {
+	 background: url('https://news.wttw.com/sites/default/files/field/image/Election_2020_Debate_20274148643710Crop.jpg') center center;
+	 background-size: cover;
+	 background-attachment: fixed;
+}
+ .glass {
+	 height: 100%;
+	 width: 100%;
+	 background-image: url('https://news.wttw.com/sites/default/files/field/image/Election_2020_Debate_20274148643710Crop.jpg');
+	 background-size: cover;
+	 background-position: center;
+	 clip-path: inset(10em);
+	 filter: blur(20px);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .drop-shadow {
+	 height: 100%;
+	 width: 100%;
+	 filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.30));
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ .drop-shadow:before {
+	 display: block;
+	 content: "";
+	 position: absolute;
+	 top: 10em;
+	 height: calc(100% - 20em);
+	 width: calc(100% - 20em);
+	 border-top: 2px solid rgba(225, 225, 225, 0.2);
+	 border-left: 1px solid rgba(225, 225, 225, 0.1);
+	 border-right: 1px solid rgba(225, 225, 225, 0.3);
+	 z-index: 2;
+}
+ .drop-shadow > span {
+	 position: absolute;
+	 z-index: 5;
+	 color: white;
+	 font-size: 4em;
+	 letter-spacing: 0.75em;
+	 padding-left: 0.375em;
+}
+ @media (max-width: 980px) {
+	 .glass {
+		 clip-path: inset(5em);
+	}
+	 .drop-shadow:before {
+		 top: 5em;
+		 width: calc(100% - 10em);
+	}
+	 .drop-shadow > span {
+		 font-size: 4em;
+	}
+}
+ @media (max-width: 640px) {
+	 .drop-shadow > span {
+		 font-size: 2em;
+	}
+}
+
+
+
+ .kolic-card{
+	 display: inline-block;
+	 width: 50px;
+	 height: 5px;
+	 background-color: #2d58c4;
+	 margin-bottom: 30px;
+
+}
+.text-container p {
+  line-height: normal;
+  margin-top: 20px;
+  font-size: 20px;
+}
+ img {
+	 width: 100%;
+}
+
+ div.site {
+	 background-color: #f2f2f2;
+	 height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 background-image: linear-gradient(210deg, #fb8e2a, #fdc154);
+}
+ div.kolic-container {
+	 background-color: white;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 margin: 30px;
+	 box-shadow: 0 8px 16px rgba(0, 0, 0, .45);
+}
+ div.img {
+	 height: 300px;
+	 width: 100%;
+	 background: url("https://i.pinimg.com/originals/30/68/79/306879837ec47945ea221a3576476f93.jpg");
+	 background-position: center;
+	 background-size: cover;
+}
+ div.text-container {
+	 margin: 60px 45px 55px;
+}
+ @media screen and (min-width: 768px) {
+	 div.kolic-container {
+		 flex-direction: row;
+		 width: 100%;
+	}
+	 div.img {
+		 height: 420px;
+		 min-width: 360px;
+	}
+	 div.text-container {
+		 margin: 0 60px;
+		 max-width: 660px;
+	}
+}
+ @media screen and (min-width: 1024px) {
+	 div.kolic-container {
+     width: 1200px;
+	}
+}
+
+
+
+
+.slider {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+ 	margin: auto;
+	-webkit-perspective: 600px;
+	        perspective: 600px;
+}
+
+	.slider * {
+		-webkit-transition: all 1s cubic-bezier(0.5, -0.75, 0.2, 1.5);
+		        transition: all 1s cubic-bezier(0.5, -0.75, 0.2, 1.5);
+	}
+
+	.cube-container {
+		width: inherit;
+		height: inherit;
+		-webkit-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+		-webkit-transform: rotateY(0deg) rotateX(0deg);
+		        transform: rotateY(0deg) rotateX(0deg);
+	}
+
+		.slide, .slide:after, .slide:before {
+			display: block;
+			width: inherit;
+			height: inherit;
+			background: url('https://cdn.dribbble.com/users/5031/screenshots/7008431/dribbble.png');
+			position: absolute;
+			-webkit-transform-style: preserve-3d;
+			        transform-style: preserve-3d;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.slide.x {
+		  -webkit-transform: rotateY(90deg);
+		          transform: rotateY(90deg);
+		}
+
+			.slide.x:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/730703/screenshots/6988911/elenidebo-thisiscolossal-theroad-forchicagodesignmuseum.jpg');
+				-webkit-transform: translateZ(100px) rotateZ(-90deg);
+				        transform: translateZ(100px) rotateZ(-90deg);
+			}
+
+			.slide.x:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/329207/screenshots/6220354/bemocs_geneseo_sailing.jpg');
+				-webkit-transform: translateZ(-100px) rotateZ(-90deg);
+				        transform: translateZ(-100px) rotateZ(-90deg);
+			}
+
+		.slide.y {
+		  -webkit-transform: rotateX(90deg);
+		          transform: rotateX(90deg);
+		}
+
+			.slide.y:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/63407/screenshots/5705689/dribbble_moonlight_2x.png');
+				-webkit-transform: translateZ(100px) scale(-1);
+				        transform: translateZ(100px) scale(-1);
+			}
+
+			.slide.y:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/1355613/screenshots/6441984/landscape_2x.jpg');
+				-webkit-transform: translateZ(-100px);
+				        transform: translateZ(-100px);
+			}
+
+		.slide.z {
+		  -webkit-transform: rotateX(0);
+		          transform: rotateX(0);
+		}
+
+			.slide.z:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/3178178/screenshots/7013817/the_caravan_by_patryk_wojciechowicz_2x.png');
+				-webkit-transform: translateZ(100px);
+				        transform: translateZ(100px);
+			}
+
+			.slide.z:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/1361661/screenshots/6673317/music_girl.png');
+				-webkit-transform: translateZ(-100px);
+				        transform: translateZ(-100px);
+			}
+
+
+		.cube-container {
+			-webkit-animation: rotate 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+			animation: rotate 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+		}
+
+		@-webkit-keyframes rotate {
+			0%, 10% {-webkit-transform: rotateY(0deg) rotateX(0deg);transform: rotateY(0deg) rotateX(0deg);}
+			15%, 20% {-webkit-transform: rotateY(180deg) rotateX(0deg);transform: rotateY(180deg) rotateX(0deg);}
+			25%, 35% {-webkit-transform: rotateY(180deg) rotateX(270deg);transform: rotateY(180deg) rotateX(270deg);}
+			40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);transform: rotateY(180deg) rotateX(90deg);}
+			55%, 65% {-webkit-transform: rotateY(-90deg) rotateX(90deg);transform: rotateY(-90deg) rotateX(90deg);}
+			70%, 80% {-webkit-transform: rotateY(90deg) rotateX(90deg);transform: rotateY(90deg) rotateX(90deg);}
+			90%, 95% {-webkit-transform: rotateY(0deg) rotateX(90deg);transform: rotateY(0deg) rotateX(90deg);}
+		}
+
+		@keyframes rotate {
+			0%, 10% {-webkit-transform: rotateY(0deg) rotateX(0deg);transform: rotateY(0deg) rotateX(0deg);}
+			15%, 20% {-webkit-transform: rotateY(180deg) rotateX(0deg);transform: rotateY(180deg) rotateX(0deg);}
+			25%, 35% {-webkit-transform: rotateY(180deg) rotateX(270deg);transform: rotateY(180deg) rotateX(270deg);}
+			40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);transform: rotateY(180deg) rotateX(90deg);}
+			55%, 65% {-webkit-transform: rotateY(-90deg) rotateX(90deg);transform: rotateY(-90deg) rotateX(90deg);}
+			70%, 80% {-webkit-transform: rotateY(90deg) rotateX(90deg);transform: rotateY(90deg) rotateX(90deg);}
+			90%, 95% {-webkit-transform: rotateY(0deg) rotateX(90deg);transform: rotateY(0deg) rotateX(90deg);}
+		}
+
+
+.shadow {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	top: 60%;
+	-webkit-transform: rotateX(90deg);
+	        transform: rotateX(90deg);
+	z-index: -1;
+	-webkit-filter: blur(20px);
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="20" /></filter></svg>#filter');
+	-webkit-filter: blur(20px);
+	        filter: blur(20px);
+	left: 0;
+	right: 0;
+	margin: auto;
+	-webkit-animation: rotateShadow 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+	animation: rotateShadow 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+}
+
+	@-webkit-keyframes rotateShadow {
+		0%, 10% {-webkit-transform: rotateY(0deg) rotateX(90deg);}
+		15%, 20% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
+		20.1%, 20.9% {-webkit-transform: rotateY(180deg) rotateX(90deg) translatez(5px);}
+		25%, 35% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
+		35.1%, 35.9% {-webkit-transform: rotateY(180deg) rotateX(90deg) translatez(-5px);}
+		40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
+		55%, 65% {-webkit-transform: rotateY(0deg) rotateX(90deg);}
+		70%, 80% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
+		90%, 99% {-webkit-transform: rotateY(90deg) rotateX(90deg);}
+		99.1%, 99.9% {-webkit-transform: rotateY(90deg) rotateX(90deg) translatez(-5px);}
+	}
+
+.kolic-hashtag h2 {
+  color:white;
+  position: relative;
+  font-weight: 500;
+  margin-left: 40vh;
+  margin-right: auto;
+}
+
+/* #kolic_one {
+  background-image: url("images/fulls/debate2.jpg");
+} */
