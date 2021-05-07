@@ -1564,7 +1564,7 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			text-align: center;
-			padding: 3em 0 3em 0;
+			padding: 2em 0 2em 0;
 		}
 
 			.main.style1 h2 {
@@ -1936,11 +1936,11 @@ color:white;
 	flex: 1 0 24rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
-	box-shadow: 0.2rem 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
 
 .gallery-image {
+column-gap: 30px;
 
 	display: block;
 	width: 100%;
@@ -1958,7 +1958,7 @@ color:white;
 	.sponsor-image-gallery {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
+		grid-gap: 7rem;
 	}
 
 	.sponsor-image-gallery,

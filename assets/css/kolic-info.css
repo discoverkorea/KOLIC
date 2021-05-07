@@ -26,7 +26,7 @@
 	 height: 90vmin;
 	 left: 50%;
 	 position: absolute;
-	 top: 50%;
+	 top: 52%;
 	 transform: translate(-50%, -50%);
 	 width: 800px;
 }
@@ -69,24 +69,24 @@
 	 animation-fill-mode: forwards;
 	 top: 0;
 	 transform: translate(0, -100%);
-   color: #3EB489;
+   color: white;
 }
 
 
 
 .kolic-info {
-	 background: url('https://news.wttw.com/sites/default/files/field/image/Election_2020_Debate_20274148643710Crop.jpg') center center;
+	 background: white;
 	 background-size: cover;
-	 background-attachment: fixed;
+	 background-attachment: relative;
 }
  .glass {
 	 height: 100%;
 	 width: 100%;
-	 background-image: url('https://news.wttw.com/sites/default/files/field/image/Election_2020_Debate_20274148643710Crop.jpg');
+	 background-image: url('/images/fulls/debate2.jpg');
 	 background-size: cover;
 	 background-position: center;
-	 clip-path: inset(10em);
-	 filter: blur(20px);
+	 /* clip-path: inset(10em); */
+	 /* filter: blur(20px); */
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -94,7 +94,7 @@
  .drop-shadow {
 	 height: 100%;
 	 width: 100%;
-	 filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.30));
+	 /* filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.30)); */
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -162,7 +162,8 @@
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
-	 background-image: linear-gradient(210deg, #008080, #87ceeb);
+	 /* background-image: linear-gradient(270deg, #2F3F82, #87ceeb); */
+   background-color:#E1E9EC;
 }
  div.kolic-container {
 	 background-color: white;
@@ -171,7 +172,7 @@
 	 align-items: center;
 	 justify-content: center;
 	 margin: 30px;
-	 box-shadow: 0 8px 16px rgba(0, 0, 0, .45);
+	 /* box-shadow: 0 8px 16px rgba(0, 0, 0, .45); */
 }
  div.img {
 	 height: 300px;
@@ -290,7 +291,7 @@
 
 			.slide.z:after {
 				content: '';
-				background-image: url('https://cdn.dribbble.com/users/3178178/screenshots/7013817/the_caravan_by_patryk_wojciechowicz_2x.png');
+				background-image: url('https://i.pinimg.com/564x/55/16/df/5516df869736e4eaf9824629d4fd1ee1.jpg');
 				-webkit-transform: translateZ(100px);
 				        transform: translateZ(100px);
 			}
@@ -356,7 +357,7 @@
 		20.1%, 20.9% {-webkit-transform: rotateY(180deg) rotateX(90deg) translatez(5px);}
 		25%, 35% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
 		35.1%, 35.9% {-webkit-transform: rotateY(180deg) rotateX(90deg) translatez(-5px);}
-		40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
+		40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg) ;}
 		55%, 65% {-webkit-transform: rotateY(0deg) rotateX(90deg);}
 		70%, 80% {-webkit-transform: rotateY(180deg) rotateX(90deg);}
 		90%, 99% {-webkit-transform: rotateY(90deg) rotateX(90deg);}
@@ -364,13 +365,9 @@
 	}
 
 .kolic-hashtag h2 {
-  color:white;
+  color:black;
   position: relative;
   font-weight: 500;
   margin-left: 40vh;
   margin-right: auto;
 }
-
-/* #kolic_one {
-  background-image: url("images/fulls/debate2.jpg");
-} */
