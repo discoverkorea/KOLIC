@@ -245,7 +245,7 @@ main {
 }
 
 #flip div div {
-  background:#2F3F82;
+  background:dimgray;
 width: 300px;
 }
 #flip div:first-child div {
@@ -253,7 +253,7 @@ width: 300px;
 width: 200px;
 }
 #flip div:last-child div {
-  background:dimgray;
+  background:#2F3F82;
 	width: 400px;
 
 }

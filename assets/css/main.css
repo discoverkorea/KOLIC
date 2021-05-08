@@ -199,7 +199,28 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
 		color: #98c593;
+		text-decoration: none;
 	}
+
+	.hyperlink > a {
+	 display: inline-block;
+	 position: relative;
+}
+ .hyperlink > a:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 width: 0;
+	 bottom: 0;
+	 height: 1px;
+	 margin: -10px 0;
+	 left: 0;
+	 background-color: black;
+	 transition: all 0.4s ease-in 0s;
+}
+ .hyperlink > a:hover:after {
+	 width: 100%;
+}
 
 	sub {
 		position: relative;
@@ -224,7 +245,7 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	p, ol, dl, table {
 		margin-bottom: 1em;
 	}
 

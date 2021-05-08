@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>asdf</title>
+
+
+    <link rel="stylesheet" href="easteregg4.css" />
+
+  </head>
+  <body>
+<div class="switch"><input id="on" type="radio" name="status" value="on" /><label for="on">on</label><input id="off" type="radio" name="status" value="off" checked="checked" /><label for="off">off</label></div>
+<script>
+document.querySelectorAll('.switch input').forEach(radio => {
+	radio.addEventListener('change', () => {
+		document.body.dataset.switch = radio.value;
+	})
+})
+</script>
+  </body>
+</html>
